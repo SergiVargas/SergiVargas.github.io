@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CajaRegistradora:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CajaRegistradora_jar</output-path>
+    <root id="archive" name="CajaRegistradora.jar">
+      <element id="module-output" name="CajaRegistradora" />
+    </root>
+  </artifact>
+</component>
