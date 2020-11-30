@@ -17,9 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //TODO MEJORAR PANTALLA ATRAS, FUNCIONALIDADES DE LAS BASES DE DATOS Y DISEÑO GRAFICO
-    //TODO CUANDO SE ACTUALIZAN DATOS SE CREA UN NUEVO REGISTRO, DEBE BORRAR EL ANTIGUO
-    //TODO VER QUE COSAS RARAS HACE LA BASE DE DATOS PARA DEBUGEAR
+
 
     //Método asociado al botón cerrar para finalizar la APP
 
