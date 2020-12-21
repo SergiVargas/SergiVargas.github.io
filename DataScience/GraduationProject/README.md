@@ -1,0 +1,4 @@
+
+# Explanation
+
+This is the final project done for graduation. It is about applying the techniques of the Theory of Fractal Markets in a series of quotation samples of large companies on the stock market. The Hurst Coefficient is used as a validation mean of whether these trends really exist in the stock market. The complete work is included in pdf, and three Jupyter Notebooks with the programs made, in these the use of the library functionalities has been minimized. Some of the calculations used and that have been programmed in pure Python are much more efficient with the Numpy functions, for example.
