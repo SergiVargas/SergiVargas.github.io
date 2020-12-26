@@ -4,3 +4,4 @@ It is a small navigation bar with a basic responsive design when going below 600
 
 # PricingTable
 
+Show a price table for four products. It is designed with a responsive design, it also includes some CSS effects such as shadows or gradients.
