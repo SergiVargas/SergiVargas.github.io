@@ -1,0 +1,67 @@
+.enlace{
+
+
+    background-color: brown;
+    color: white;
+    padding: 15px 35px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.enlace:hover{
+
+
+    background-color: green;
+}
+
+
+nav{
+
+    background-color: aquamarine;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navButton{
+
+    color: white;
+    background-color: brown;
+    padding: 20px 10px;
+    border: 4px solid yellowgreen;
+    display: none;
+
+
+}
+
+.navButton:hover{
+
+    background-color: olivedrab;
+}
+
+
+@media (max-width : 600px){
+
+    nav{
+        flex-direction: column;
+        background-color: darksalmon;
+        
+    }
+
+    .enlace{
+
+        margin: 10px 0px;
+    }
+
+    .enlace:hover{
+
+        background-color: blue;
+    }
+
+    .navButton{
+
+        display: inline-block;
+    }
+
+
+}
