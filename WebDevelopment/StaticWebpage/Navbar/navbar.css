@@ -63,5 +63,10 @@ nav{
         display: inline-block;
     }
 
+    .desaparece{
+
+        display: none;
+    }
+
 
 }
