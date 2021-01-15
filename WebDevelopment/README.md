@@ -1,1 +1,1 @@
-Projects made with Angular, React.js and pure JavaScript
+Projects made with Angular and React.js 
