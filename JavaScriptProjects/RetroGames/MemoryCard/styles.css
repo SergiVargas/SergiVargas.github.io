@@ -9,7 +9,7 @@ body {
 
     height: 100vh;
     display: flex;
-    background: black;
+    background: rgb(37, 179, 235);
 }
 
 .memory-game{
