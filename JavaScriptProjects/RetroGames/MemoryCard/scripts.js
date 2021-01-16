@@ -19,6 +19,24 @@ function flipCards() {
       //second click
       hasFlipperCard = false;
       secondCard = this;
+
+
+      if (firstCard.dataset.framework ===
+         secondCard.dataset.framework){
+
+        firstCard.removeEventListener('click', flipCards);
+        secondCard.removeEventListener('click', flipCards);
+         }else{
+
+            setTimeout(() => {
+
+                firstCard.classList.remove('flip');
+                secondCard.classList.remove('flip');
+
+            }, 300);
+
+            
+         }
   }
 }
 
