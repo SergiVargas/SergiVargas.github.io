@@ -13,7 +13,7 @@ In this folder the data of all the aplications will be saved.
 
 ### STREAMLIT PROYECT
 
-This folder contains a group of nice WebApps created with this powerful Python library.
+This folder contains a group of nice Web Apps created with this powerful Python library.
 
 
 ### ML FOR CIBERSECURITY
