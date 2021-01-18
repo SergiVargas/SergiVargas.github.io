@@ -28,7 +28,7 @@ while True:
     
 capture.release()
 cv.destroyAllWindows()
-cv.waitKey(0)"""
+cv.waitKey(0)   """
 
 
 
@@ -40,6 +40,22 @@ cv.imshow('Tree2Before',image2)
 cv.waitKey(0)
 
 
+#Creating a function to rescale, default value = 0.50
+def rescale(frame, scale = 0.50):
+    """
+    This function is for images, videos and live videos
+    """
+    width = int(frame.shape[1] * scale)
+    height = int(frame.shape[0] * scale)
+    dimensions = (width, height)
+    
+    return cv.resize(frame, dimensions, interpolation = cv.INTER_AREA)
+    
+
+
+imageRescale = rescale(image2)
+
+
 #After manipulate
-cv.imshow('Tree2After',image2)
+cv.imshow('Tree2After',imageRescale)
 cv.waitKey(0)
