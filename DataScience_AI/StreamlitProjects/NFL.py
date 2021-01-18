@@ -1,3 +1,7 @@
+
+#This is a App web scraping to show data about NFL
+
+
 import streamlit as st
 import pandas as pd
 import base64
@@ -5,6 +9,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from PIL import Image
+
 
 #First manipulate the logo with PIL library
 logo = Image.open("Data\\NFL.jpg").resize((700,600))
@@ -47,6 +52,7 @@ playerstats = load_data(selected_year)
 sorted_unique_team = sorted(playerstats.Tm.unique())
 selected_team = st.sidebar.multiselect('Team', sorted_unique_team, sorted_unique_team)
 
+
 #Filtering data
 df_selected_team = playerstats[(playerstats.Tm.isin(selected_team))] 
 
@@ -56,7 +62,8 @@ st.write('Data Dimension: ' + str(df_selected_team.shape[0]) + ' rows and ' + st
 st.dataframe(df_selected_team)
 
 
-#Download NFL data
+
+#Download NFL data on our computer
 
 def filedownload(df):
     csv = df.to_csv(index = False)
@@ -65,10 +72,13 @@ def filedownload(df):
     return href
 
 st.markdown(filedownload(df_selected_team), unsafe_allow_html=True)
+
+
+#Global Pyplot alarmdisabled
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-#HeatMap
 
+#HeatMap setting
 if st.button('Intercorrelation Heatmap'):
     st.header('Intercorrelation Matrix Heatmap')
     df_selected_team.to_csv('output.csv', index = False)
