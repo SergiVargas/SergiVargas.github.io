@@ -1,3 +1,5 @@
+#This web app shows online the Iris classification data set
+
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -23,6 +25,7 @@ st.write("""
 st.sidebar.header('Input Parameters')
 
 
+#Function to use the dataset
 def user_in_features():
     sepal_length = st.sidebar.slider('Sepal_lenght', 4.0,8.0,6.0)
     sepal_width = st.sidebar.slider('Sepal_width', 2.0, 5.0, 3.5)
@@ -39,21 +42,27 @@ def user_in_features():
 
 df = user_in_features()
 
+
 st.subheader('User Input parameters')
 
 st.dataframe(df)
 
+
+#Divide the data to work with the model
 iris = datasets.load_iris()
 X = iris.data
 Y = iris.target
 
+#Define the classification algorithm and train it
 clf = RandomForestClassifier()
 clf.fit(X,Y)
 
-
+#Use the trained model to make the predictions
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
+
+#Show the data
 st.subheader('Class labels and their index number')
 st.write(iris.target_names)
 
