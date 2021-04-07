@@ -43,6 +43,10 @@
 
 		opacity: 0.5;
 
+	}
 
+	main{
+
+		background-color: darkkhaki;
 	}
 </style>
