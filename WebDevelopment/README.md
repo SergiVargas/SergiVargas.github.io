@@ -1,1 +1,1 @@
-Projects made with Angular and React.js 
+Projects made with Svelte, Angular and React.js 
