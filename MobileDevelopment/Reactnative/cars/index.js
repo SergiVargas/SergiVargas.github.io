@@ -1,18 +1,18 @@
-//importar librerias
+//import libraries
 import React from 'react';
 import {Text, AppRegistry,} from 'react-native';
 
-//crear componentes
+//create component
 
 const App = () => {
 
     return (
 
-        <Text>HOla guapo</Text>
+        <Text>Bienvenido a la App</Text>
     );
 }
 
 
-//renderizar a componentes a pantalla
+//render component to screen
 
 AppRegistry.registerComponent('cars', () => App);
